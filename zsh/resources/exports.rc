@@ -1,0 +1,19 @@
+#!/bin/zsh
+
+## directory stack
+export DIRSTACKSIZE=10
+
+## watchs for logins/logouts
+export LOGCHECK=60
+export WATCHFMT="%n has %a %l from %M at %t"
+export WATCH=all
+
+## history configuration
+export HISTFILE=$HOME/.zshhistory
+export HISTSIZE=100000
+export SAVEHIST=50000
+
+## other
+export EDITOR="emacs"
+export XTERM="xterm-color"
+export CCACHE_PREFIX="distcc"

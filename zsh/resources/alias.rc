@@ -1,0 +1,12 @@
+#!/bin/zsh
+
+alias ..='cd ..'
+alias clean='rm -rf \#* .\#* *~'
+alias cp='nocorrect cp'
+alias grep='grep --color=auto'
+alias ll='ls -lh'
+alias lla='ls -lha'
+alias mkdir='nocorrect mkdir -p'
+alias mv='nocorrect mv'
+alias rm="nocorrect rm -i"
+alias less="less -R"
