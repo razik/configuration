@@ -12,7 +12,7 @@ eval `dircolors $HOME/.configuration/zsh/colors/colors`
 ## Load zsh resource files
 load_resource "$HOME/.configuration/zsh/resources/alias.rc"
 load_resource "$HOME/.configuration/zsh/resources/completion.rc"
-load_resource "$HOME/.configuration/zsh/resources/configurationuration.rc"
+load_resource "$HOME/.configuration/zsh/resources/configuration.rc"
 load_resource "$HOME/.configuration/zsh/resources/exports.rc"
 load_resource "$HOME/.configuration/zsh/resources/functions.rc"
 load_resource "$HOME/.configuration/zsh/resources/options.rc"
