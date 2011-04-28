@@ -3,7 +3,8 @@
 alias ..='cd ..'
 alias clean='rm -rf \#* .\#* *~'
 alias cp='nocorrect cp'
-alias grep='grep -nrI --color=auto --exclude-dir=\.svn --exclude-dir=\.git --exclude=*~'
+alias grep="grep -nrI --color=auto --exclude=*~ $GREP_OS_OPTIONS"
+alias ls="ls $LS_OS_OPTIONS"
 alias ll='ls -lh'
 alias lla='ls -lha'
 alias mkdir='nocorrect mkdir -p'

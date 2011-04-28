@@ -9,6 +9,9 @@ load_resource()
 ## Load colors
 eval `dircolors $HOME/.configuration/zsh/colors/colors`
 
+## Load Operating System specific resources
+load_resource "$HOME/.configuration/zsh/resources/os/`uname`.rc"
+
 ## Load zsh resource files
 load_resource "$HOME/.configuration/zsh/resources/alias.rc"
 load_resource "$HOME/.configuration/zsh/resources/completion.rc"
@@ -17,9 +20,6 @@ load_resource "$HOME/.configuration/zsh/resources/exports.rc"
 load_resource "$HOME/.configuration/zsh/resources/functions.rc"
 load_resource "$HOME/.configuration/zsh/resources/options.rc"
 load_resource "$HOME/.configuration/zsh/resources/prompt.rc"
-
-## Load Operating System specific resources
-load_resource "$HOME/.configuration/zsh/resources/os/`uname`.rc"
 
 ## Load Hostname specific resources
 load_resource "$HOME/.configuration/zsh/resources/hostname/`hostname`.rc"

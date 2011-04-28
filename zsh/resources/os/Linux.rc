@@ -1,3 +1,4 @@
 #!/bin/zsh
 
-alias ls="ls --color"
+export GREP_OS_OPTIONS="--exclude-dir=\.svn --exclude-dir=\.git"
+export LS_OS_OPTIONS="--color"
