@@ -1,0 +1,36 @@
+;; -*- emacs-lisp -*-
+
+;;;;;;;;;;;;;;;;;;;;;;
+;; User information ;;
+;;;;;;;;;;;;;;;;;;;;;;
+
+(setq user-full-name "Razik Yousfi")
+(setq user-mail-address "ykizar@gmail.com")
+
+;;;;;;;;;;;;
+;; Basics ;;
+;;;;;;;;;;;;
+
+(load "~/.configuration/emacs/resources/basics/appearance.el")
+(load "~/.configuration/emacs/resources/basics/encoding.el")
+(load "~/.configuration/emacs/resources/basics/functions.el")
+(load "~/.configuration/emacs/resources/basics/hooks.el")
+(load "~/.configuration/emacs/resources/basics/key-bindings.el")
+(load "~/.configuration/emacs/resources/basics/options.el")
+(load "~/.configuration/emacs/resources/basics/style.el")
+
+;;;;;;;;;;;;;;
+;; Packages ;;
+;;;;;;;;;;;;;;
+
+(load "~/.configuration/emacs/resources/basics/elpa.el")
+(load "~/.configuration/emacs/resources/basics/el-get.el")
+
+;;;;;;;;;;;;;;;;;;;;;;
+;; 3rdParty Modules ;;
+;;;;;;;;;;;;;;;;;;;;;;
+
+(load "~/.configuration/emacs/resources/modules/ido.el")
+(load "~/.configuration/emacs/resources/modules/smex.el")
+(load "~/.configuration/emacs/resources/modules/cedet.el")
+(load "~/.configuration/emacs/resources/modules/ecb.el")
