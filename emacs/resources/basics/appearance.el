@@ -39,9 +39,9 @@
  '(vhdl-speedbar-package-selected-face ((((class color) (background dark)) (:underline t :foreground "black"))))
  '(widget-field ((((class grayscale color) (background light)) (:background "DarkBlue")))))
 
-(set-background-color "black")
-(set-foreground-color "white")
-(set-cursor-color "Steelblue")
+(add-to-list 'default-frame-alist '(background-color . "black"))
+(add-to-list 'default-frame-alist '(foreground-color . "white"))
+(add-to-list 'default-frame-alist '(cursor-color . "Steelblue"))
 
 (if (not (eq system-type 'darwin))
     (if (>= emacs-major-version 23)
