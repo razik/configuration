@@ -33,5 +33,6 @@
 (load "~/.configuration/emacs/resources/modules/ido.el")
 (load "~/.configuration/emacs/resources/modules/nxhtml.el")
 (load "~/.configuration/emacs/resources/modules/smex.el")
+(load "~/.configuration/emacs/resources/modules/redo+.el")
 (load "~/.configuration/emacs/resources/modules/cedet.el")
 (load "~/.configuration/emacs/resources/modules/ecb.el")
