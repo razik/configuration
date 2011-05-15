@@ -2,3 +2,5 @@
 
 export GREP_OS_OPTIONS=""
 export LS_OS_OPTIONS="-G"
+
+export PATH=/opt/local/bin:$PATH
