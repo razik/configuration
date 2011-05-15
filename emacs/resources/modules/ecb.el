@@ -2,25 +2,28 @@
 ;; ECB ;;
 ;;;;;;;;;
 
-(custom-set-variables
-  ;; custom-set-variables was added by Custom.
-  ;; If you edit it by hand, you could mess it up, so be careful.
-  ;; Your init file should contain only one such instance.
-  ;; If there is more than one, they won't work right.
- '(ecb-compile-window-height 12)
- '(ecb-compile-window-width (quote edit-window))
- '(ecb-layout-name "leftright2")
- '(ecb-layout-window-sizes nil)
- '(ecb-options-version "2.40")
- '(ecb-primary-secondary-mouse-buttons (quote mouse-1--C-mouse-1))
- '(ecb-tip-of-the-day nil))
+(global-set-key [f1] 'ecb-toggle)
 
-(defun switch-ecb-state ()
+;; Custom variables
+(custom-set-variables
+ '(ecb-options-version "2.40"))
+
+;; ECB options
+(setq ecb-tip-of-the-day nil
+      ecb-history-make-buckets (quote never)
+      ecb-layout-name "leftright2"
+      ecb-primary-secondary-mouse-buttons (quote mouse-1--C-mouse-1)
+      ecb-layout-window-sizes (quote(("leftright2"
+                                      (ecb-directories-buffer-name 0.16 . 0.65)
+                                      (ecb-sources-buffer-name 0.16 . 0.35)
+                                      (ecb-methods-buffer-name 0.20 . 0.65)
+                                      (ecb-history-buffer-name 0.20 . 0.35)))))
+
+;; ECB toggling
+(defun ecb-toggle ()
   (interactive)
   (if (eq ecb-minor-mode
           nil)
       (ecb-activate)
     (ecb-deactivate)
     ))
-
-(global-set-key [f1] 'switch-ecb-state)

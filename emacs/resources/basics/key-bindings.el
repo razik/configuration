@@ -2,11 +2,10 @@
 ;; Key bindings ;;
 ;;;;;;;;;;;;;;;;;;
 
-(global-set-key [f2]  'eshell)               ; f2 = emacs shell
 (global-set-key [f3]  'replace-string)       ; f3 = replace string
 (global-set-key [f4]  'replace-regexp)       ; f4 = replace regexp
 
-(global-set-key [f5]  'calculator)           ; f5 = calculator
+(global-set-key [f5]  'linum-mode)           ; f5 = linum-mode
 (global-set-key [f6]  'reindent-file)        ; f6 = reindent file
 (global-set-key [f7]  'goto-line)            ; f7 = goto line
 (global-set-key [f8]  'kill-this-buffer)     ; f8 = kill this buffer
@@ -24,5 +23,6 @@
 ;; Key commands ;;
 ;;;;;;;;;;;;;;;;;;
 
-(global-set-key "\C-ch"    'c-header-ifndef)
-(global-set-key "\C-c\C-c" 'comment-region)
+(global-set-key "\C-ch"         'c-header-ifndef)
+(global-set-key (kbd "C-c C-u") 'uncomment-region)
+(global-set-key (kbd "C-c C-c") 'comment-region)

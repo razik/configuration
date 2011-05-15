@@ -4,8 +4,15 @@
 ;; User information ;;
 ;;;;;;;;;;;;;;;;;;;;;;
 
-(setq user-full-name "Razik Yousfi")
+(setq user-full-name    "Razik Yousfi")
 (setq user-mail-address "ykizar@gmail.com")
+
+;;;;;;;;;;;;;;
+;; Packages ;;
+;;;;;;;;;;;;;;
+
+(load "~/.configuration/emacs/resources/basics/elpa.el")
+(load "~/.configuration/emacs/resources/basics/el-get.el")
 
 ;;;;;;;;;;;;
 ;; Basics ;;
@@ -19,20 +26,16 @@
 (load "~/.configuration/emacs/resources/basics/options.el")
 (load "~/.configuration/emacs/resources/basics/style.el")
 
-;;;;;;;;;;;;;;
-;; Packages ;;
-;;;;;;;;;;;;;;
-
-(load "~/.configuration/emacs/resources/basics/elpa.el")
-(load "~/.configuration/emacs/resources/basics/el-get.el")
-
 ;;;;;;;;;;;;;;;;;;;;;;
 ;; 3rdParty Modules ;;
 ;;;;;;;;;;;;;;;;;;;;;;
 
-(load "~/.configuration/emacs/resources/modules/ido.el")
-(load "~/.configuration/emacs/resources/modules/nxhtml.el")
-(load "~/.configuration/emacs/resources/modules/smex.el")
-(load "~/.configuration/emacs/resources/modules/redo+.el")
 (load "~/.configuration/emacs/resources/modules/cedet.el")
+(load "~/.configuration/emacs/resources/modules/cmake.el")
 (load "~/.configuration/emacs/resources/modules/ecb.el")
+(load "~/.configuration/emacs/resources/modules/ido.el")
+(load "~/.configuration/emacs/resources/modules/minimap.el")
+(load "~/.configuration/emacs/resources/modules/nxhtml.el")
+(load "~/.configuration/emacs/resources/modules/redo+.el")
+(load "~/.configuration/emacs/resources/modules/smex.el")
+(load "~/.configuration/emacs/resources/modules/uniquify.el")

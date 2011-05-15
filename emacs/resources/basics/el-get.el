@@ -15,31 +15,30 @@
 (require 'el-get)
 
 (setq el-get-sources
-      '(cmake-mode
+      '(auto-complete
+        (:name cedet
+               :type bzr
+               :url "bzr://cedet.bzr.sourceforge.net/bzrroot/cedet/code/trunk"
+               :build ("make")
+               :load-path ("./common")
+               :features cedet)
+        cmake-mode
+        (:name ecb
+               :type git
+               :module "ecb"
+               :url "git://github.com/razik/ecb.git"
+               :build `(,(concat "make CEDET=~/.emacs.d/el-get/cedet" " EMACS=" el-get-emacs))
+               :features ecb)
         el-get
         magit
+        minimap
         nxhtml
         php-mode
-        smex
-
+        rainbow-mode
         (:name redo+
                :type elpa
                :after (lambda () (require 'redo+)))
-
-        (:name cedet
-               :type bzr
-               :url "bzr://cedet.bzr.sourceforge.net/bzrroot/cedet/code/cedet-1.0"
-               :build ("make")
-               :load-path ("./common")
-               :autoloads nil
-               :features cedet)
-
-        (:name ecb
-               :type cvs
-               :module "ecb"
-               :url ":pserver:anonymous@ecb.cvs.sourceforge.net:/cvsroot/ecb"
-               :build `(,(concat "make CEDET=~/.emacs.d/el-get/cedet" " EMACS=" el-get-emacs))
-               :features ecb)
-        ))
+        smex
+        yaml-mode))
 
 (el-get 'sync)

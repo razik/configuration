@@ -60,7 +60,12 @@
   (bury-buffer (current-buffer))
   (yic-next (buffer-list)))
 
+(defun reload-configuration ()
+  (interactive())
+  (load-file "~/.emacs"))
+
 (defun reindent-file ()
+  "Reindent the current buffer."
   (interactive())
   (if (buffer-file-name)
       (progn
@@ -70,7 +75,6 @@
   )
 
 (defun reindent (file)
-  (interactive())
   (setq buf (get-file-buffer file))
   (if buf
       (save-excursion
@@ -121,3 +125,18 @@
                              (current-buffer) t
                              (get-buffer-create "*Xmllint Errors*") t)
     (message "Buffer has been xmllint-ed.")))
+
+(defun untabify-buffer ()
+  (interactive)
+  (untabify (point-min) (point-max)))
+
+(defun sudo-edit (&optional arg)
+  (interactive "p")
+  (if (or arg (not buffer-file-name))
+      (find-file (concat "/sudo:root@localhost:" (ido-read-file-name "File: ")))
+    (find-alternate-file (concat "/sudo:root@localhost:" buffer-file-name))))
+
+(defun add-watchwords ()
+  (font-lock-add-keywords
+   nil '(("\\<\\(FIX\\|TODO\\|FIXME\\|HACK\\|REFACTOR\\|XXX\\):"
+          1 font-lock-warning-face t))))
