@@ -14,6 +14,7 @@
 ;; watchwords
 (add-hook 'c-mode-hook          'add-watchwords)
 (add-hook 'c++-mode-hook        'add-watchwords)
+(add-hook 'cmake-mode-hook      'add-watchwords)
 (add-hook 'emacs-lisp-mode-hook 'add-watchwords)
 (add-hook 'java-mode-hook       'add-watchwords)
 (add-hook 'js-mode-hook         'add-watchwords)

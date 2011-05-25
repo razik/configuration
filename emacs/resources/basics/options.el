@@ -28,7 +28,6 @@
 (setq delete-old-versions t)              ; delete oldversion file
 (setq next-line-add-newlines nil)         ; prevents new line after eof
 (global-auto-revert-mode t)               ; auto revert modified files
-(pc-selection-mode)                       ; pc-style selection mode
 (setq compilation-scroll-output t)        ; autoscroll compilation window
 (set-input-mode nil nil 1)                ; mode for reading keyboard input
 (setq-default indent-tabs-mode nil)	  ; space indentation
