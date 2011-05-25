@@ -34,6 +34,7 @@
 (load "~/.configuration/emacs/resources/modules/cmake.el")
 (load "~/.configuration/emacs/resources/modules/ecb.el")
 (load "~/.configuration/emacs/resources/modules/ido.el")
+(load "~/.configuration/emacs/resources/modules/magit.el")
 (load "~/.configuration/emacs/resources/modules/minimap.el")
 (load "~/.configuration/emacs/resources/modules/nxhtml.el")
 (load "~/.configuration/emacs/resources/modules/redo+.el")
