@@ -3,7 +3,7 @@
 alias ..='cd ..'
 alias clean='rm -rf \#* .\#* *~'
 alias cp='nocorrect cp'
-alias ec='emacsclient --alternate-editor="" -c'
+alias ec='emacsclient --alternate-editor="" -c > /dev/null'
 alias grep="grep -nrI --color=auto --exclude=*~ $GREP_OS_OPTIONS"
 alias ls="ls $LS_OS_OPTIONS"
 alias ll='ls -lh'
