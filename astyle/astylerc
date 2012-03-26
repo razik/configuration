@@ -5,11 +5,9 @@ indent-namespaces
 indent-preprocessor
 indent-col1-comments
 max-instatement-indent=80
-break-blocks
 unpad-paren
 pad-oper
 pad-header
-delete-empty-lines
 convert-tabs
 align-pointer=type
 mode=c
