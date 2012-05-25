@@ -25,6 +25,7 @@
    (string-match "^TAGS" str)
    (string-match "^\\*Messages\\*$" str)
    (string-match "^\\*Completions\\*$" str)
+   (string-match "^\\*MINIMAP\\*" str)
    (string-match "^ " str)
    (memq str
          (mapcar
@@ -59,6 +60,11 @@
   (interactive)
   (bury-buffer (current-buffer))
   (yic-next (buffer-list)))
+
+(defun yic-last-used-buffer ()
+  (interactive)
+  (yic-next (buffer-list))
+  )
 
 (defun reload-configuration ()
   (interactive())
@@ -135,8 +141,3 @@
   (if (or arg (not buffer-file-name))
       (find-file (concat "/sudo:root@localhost:" (ido-read-file-name "File: ")))
     (find-alternate-file (concat "/sudo:root@localhost:" buffer-file-name))))
-
-(defun add-watchwords ()
-  (font-lock-add-keywords
-   nil '(("\\<\\(FIX\\|TODO\\|FIXME\\|HACK\\|REFACTOR\\|XXX\\):"
-          1 font-lock-warning-face t))))
