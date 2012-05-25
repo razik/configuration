@@ -1,5 +1,11 @@
 #!/bin/zsh
 
+## PATH
+export PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
+
+## DYLD_FALLBACK_LIBRARY_PATH
+export DYLD_FALLBACK_LIBRARY_PATH=~/local/lib
+
 ## locale
 export LANG=en_US.UTF-8
 export LC_ALL=en_US.UTF-8
