@@ -31,7 +31,7 @@
 
 ;; eassist customization
 (require 'eassist)
-(add-to-list 'eassist-header-switches '("cc" "hh"))
+(add-to-list 'eassist-header-switches '("cc" "hh" "h"))
 (add-to-list 'eassist-header-switches '("hh" "cc" "hxx"))
 (add-to-list 'eassist-header-switches '("hxx" "hh"))
 
