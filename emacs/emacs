@@ -11,7 +11,7 @@
 ;; Packages ;;
 ;;;;;;;;;;;;;;
 
-(load "~/.configuration/emacs/resources/basics/elpa.el")
+(load "~/.configuration/emacs/resources/basics/packages.el")
 (load "~/.configuration/emacs/resources/basics/el-get.el")
 
 ;;;;;;;;;;;;
@@ -30,13 +30,21 @@
 ;; 3rdParty Modules ;;
 ;;;;;;;;;;;;;;;;;;;;;;
 
+(load "~/.configuration/emacs/resources/modules/ace-jump.el")
 (load "~/.configuration/emacs/resources/modules/cedet.el")
 (load "~/.configuration/emacs/resources/modules/cmake.el")
+(load "~/.configuration/emacs/resources/modules/desktop.el")
 (load "~/.configuration/emacs/resources/modules/ecb.el")
+(load "~/.configuration/emacs/resources/modules/highlight-parentheses.el")
 (load "~/.configuration/emacs/resources/modules/ido.el")
+(load "~/.configuration/emacs/resources/modules/jade.el")
+(load "~/.configuration/emacs/resources/modules/key-freq.el")
+(load "~/.configuration/emacs/resources/modules/linum.el")
 (load "~/.configuration/emacs/resources/modules/magit.el")
 (load "~/.configuration/emacs/resources/modules/minimap.el")
 (load "~/.configuration/emacs/resources/modules/nxhtml.el")
 (load "~/.configuration/emacs/resources/modules/redo+.el")
 (load "~/.configuration/emacs/resources/modules/smex.el")
 (load "~/.configuration/emacs/resources/modules/uniquify.el")
+(load "~/.configuration/emacs/resources/modules/window-numbering.el")
+(load "~/.configuration/emacs/resources/modules/yasnippet.el")

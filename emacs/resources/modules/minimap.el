@@ -2,16 +2,14 @@
 ;; Minimap ;;
 ;;;;;;;;;;;;;
 
+(require 'minimap)
+
+(setq minimap-always-recenter           t)
+(setq minimap-display-semantic-overlays nil)
+(setq minimap-hide-fringes              nil)
+(setq minimap-stay-at-beginning-of-line t)
+(setq minimap-update-delay              0.1)
+(setq minimap-width-fraction            0.1)
+(setq minimap-window-location           'right)
+
 (global-set-key [f2] 'minimap-toggle)
-
-(setq minimap-window-location 'right)
-
-;; Minimap toggling
-(defun minimap-toggle ()
-  "Show minimap if hidden, hide if present."
-  (interactive)
-  (if (and minimap-bufname
-           (get-buffer minimap-bufname)
-           (get-buffer-window (get-buffer minimap-bufname)))
-      (minimap-kill)
-    (minimap-create)))
