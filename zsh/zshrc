@@ -26,3 +26,6 @@ load_resource "$HOME/.configuration/zsh/resources/hostname/`hostname`.rc"
 
 ## Load rvm resource files
 load_resource "$HOME/.rvm/scripts/rvm"
+
+## Load nvm resource files
+load_resource "$HOME/.nvm/nvm.sh"
