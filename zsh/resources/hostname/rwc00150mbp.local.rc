@@ -1,5 +1,0 @@
-#!/bin/zsh
-
-[[ -s $(brew --prefix)/etc/profile.d/autojump.sh ]] && . $(brew --prefix)/etc/profile.d/autojump.sh
-
-export PATH=$PATH:$HOME/Tools/phabricator/arcanist/bin:/Users/ryousfi/Tools/aws/bin

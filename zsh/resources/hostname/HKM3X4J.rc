@@ -1,5 +1,0 @@
-#!/bin/zsh
-
-export JAVA_HOME=/usr/lib/jvm/java-6-sun
-export JDK_HOME=/usr/lib/jvm/java-6-sun
-export DISTCC_HOSTS="localhost/10,lzo clm3x4j/10,lzo"
