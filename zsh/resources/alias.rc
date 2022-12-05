@@ -1,14 +1,8 @@
 #!/bin/zsh
 
-alias ..='cd ..'
 alias clean='rm -rf \#* .\#* *~'
-alias cp='nocorrect cp'
 alias ec='emacsclient --alternate-editor="" -c > /dev/null'
-alias grep="grep -nrI --color=auto $GREP_OS_OPTIONS"
-alias ls="ls $LS_OS_OPTIONS"
-alias ll='ls -lh'
-alias lla='ls -lha'
-alias mkdir='nocorrect mkdir -p'
-alias mv='nocorrect mv'
+alias lla='la'
 alias rm="nocorrect rm -i"
 alias less="less -R"
+alias grep="grep -nrI --color=auto --exclude-dir={.bzr,CVS,.git,.hg,.svn} $GREP_OS_OPTIONS"

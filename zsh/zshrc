@@ -59,10 +59,11 @@ load_resource()
     return 0;
 }
 
+# Load oh-my-zsh
+load_resource "$ZSH/oh-my-zsh.sh"
+
 # Custom configuration
 load_resource "$HOME/.configuration/zsh/resources/alias.rc"
 load_resource "$HOME/.configuration/zsh/resources/exports.rc"
 load_resource "$HOME/.configuration/zsh/resources/hostname/`hostname`.rc"
 
-# Load oh-my-zsh
-load_resource "$ZSH/oh-my-zsh.sh"
